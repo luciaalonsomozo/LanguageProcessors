@@ -1,0 +1,26 @@
+//Media
+//Calcula la media de los N primeros elementos de un array suponiendo que todos los elementos son no nulos
+
+calculaMedia(arr:List<Int>[5], n:Int) -> Int{
+    Int i = 0;
+    Int suma = 0;
+    Int resultado;
+    if (n > 0) {
+        repeat(n) {
+            suma = suma + arr[i];
+            i = i + 1;
+        }
+        resultado = suma / n;
+    } else {
+        resultado = 0;
+    }
+    return resultado;
+}
+
+main() -> Int{
+    Int length = 5;
+    List<Int>[5] array = {1,2,3,4,5};
+    Int sol = calculaMedia(array,length);
+    show(sol);
+    return 0;
+}   

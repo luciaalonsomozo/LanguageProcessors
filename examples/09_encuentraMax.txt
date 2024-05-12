@@ -1,0 +1,18 @@
+//Calcula el máximo de un array
+
+calculaMax(arr:List<Int>[5], length:Int) -> Int{
+    Int max = arr[0];
+    for(Int i = 0; i < length; i = i + 1){
+        if(arr[i] > max){
+            max = arr[i];
+        }
+    }
+    show(max);                  //mostramos el maximo
+    return max;
+}
+main() -> Int{
+    Int length = 5;
+    List<Int>[5] array = {1,2,3,4,5};
+    Int sol = calculaMax(array,length);    
+    return 0;
+}    

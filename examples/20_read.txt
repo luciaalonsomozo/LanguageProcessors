@@ -1,0 +1,12 @@
+main()-> Int {
+    // Ambos show deberán imprimir los valores que el usuario introduzca por teclado.
+    Int a = read();
+    show(a);
+    Bool b = read();
+    show(b);
+    Bool aux = False || b || True;
+    show(aux);
+    Bool c = read();
+    show(False || True && c);
+    return 0;
+}

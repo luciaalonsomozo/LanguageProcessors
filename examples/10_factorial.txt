@@ -1,0 +1,23 @@
+//Factorial
+//Calcula el factorial de un número
+
+factorial (n:Int) -> Void {
+
+    Int fact = 1;
+    for (Int i=1 ; i<=n ; i = i + 1)
+    {
+        fact=i*fact;
+    }
+
+    show(fact);
+    return ;
+}
+
+
+main() -> Int{
+
+    Int n = 5;
+    factorial(n);
+    
+    return 0;
+}   

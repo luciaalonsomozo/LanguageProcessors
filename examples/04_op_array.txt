@@ -1,0 +1,20 @@
+//Operadores de arrays
+
+
+main() -> Int{
+
+    List<Int>[5] array1 = {1,2,3,4,5};
+    List<Int>[4] array2 = {2,1,3,2};
+
+    Int var1 = sum array1;                      //var1 = 15. Sumatorio de los valores del array
+    Int var2 = prod array1;                     //var2 = 120. Productorio de los valores del array
+    Int var3 = sum array1 + prod array2;        //var3 = 15 + 12 = 27
+    
+    show(var1);
+    show(var2);
+    show(var3);
+
+    return 0;
+}                                            
+
+

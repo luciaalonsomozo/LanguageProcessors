@@ -1,0 +1,19 @@
+import examples/media.txt;
+import examples/fibonacci.txt;
+
+main() -> Int{
+    Int length = 5;
+    List<Int>[5] array;
+    for(Int i = 0; i < 5; i = i + 1){
+        array[i] = calculaFibonacci(i);
+    }
+    Int sol = calculaMedia(array,length);
+    show(sol);
+
+    tImport aux;
+    aux.imp = 1;
+    show(aux.imp);
+
+    show(varglobal);
+    return 0;
+}

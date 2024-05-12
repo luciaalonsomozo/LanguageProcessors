@@ -1,0 +1,9 @@
+const Int var = 0;
+const Int var2 = var;
+Int x = var;
+
+main() -> Int {
+    Int x = var;
+    show(x);
+    return 0;
+}

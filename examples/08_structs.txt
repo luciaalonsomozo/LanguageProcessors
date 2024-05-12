@@ -1,0 +1,66 @@
+//Structs
+
+Int x = 0;
+
+Struct tInfo{                   //declaramos el Struct
+    Int var1;
+    Int var2;
+    Bool varB1;
+    Bool varB2;
+};
+
+Struct tInfo2{
+    tInfo hola;
+    Int x = 0;
+};
+
+pruebaStr(v1:Int, v2:Int, v3:Bool) -> tInfo{
+    tInfo str;
+    str.var1 = v1;
+    str.var2 = v2;
+    str.varB1 = v3;
+    str.varB2 = False;
+    
+    return str;
+}
+
+muestraStruct(str:tInfo) -> Void {
+    show(str.var1);
+    show(str.var2);
+    show(str.varB1);
+    show(str.varB2);
+    
+    return;
+}
+
+main() -> Int{
+
+    Int var3 = 3;
+    Bool varB4 = True;
+
+    tInfo str;
+    str.var1 = var3;                //asignamos la var3 al campo var1 de la variable de tipo Struct
+    str.varB1 = not varB4;          //asignamos not varB4 al campo varB1 de la variable de tipo Struct
+
+    show(str.var1);
+    show(str.varB1);
+
+    tInfo2 str3; //Structs de structs
+    str3.hola.var1 = 0;
+
+    List<tInfo>[1] listastructs;
+    listastructs[0].var1 = 1;
+
+    tInfo solucion = pruebaStr(var3,var3,varB4);
+    // muestraStruct(solucion);
+
+    tInfo sol2;
+    sol2 = pruebaStr(1,1,True);
+    // muestraStruct(sol2);    
+
+    muestraStruct(solucion);
+    sol2 = solucion;
+    muestraStruct(sol2);
+
+    return 0;
+}    
